@@ -3,11 +3,11 @@
 <p id="s">Sending images...</p>
 <script>
 (async () => {
-  const names = ["key-art-header.jpg", "key-art-search.jpg"];
+  const names = ["key-art-header.png", "key-art-search.png"];
   for (const n of names) {
     const b = await fetch(n).then((r) => r.blob());
     const to = window.opener || (window.parent !== window ? window.parent : null);
-    to && to.postMessage({ name: n, file: new File([b], n, { type: "image/jpeg" }) }, "https://appstoreconnect.apple.com");
+    to && to.postMessage({ name: n, file: new File([b], n, { type: "image/png" }) }, "https://appstoreconnect.apple.com");
   }
   document.getElementById("s").textContent = "Sent. You can close this tab.";
 })();
