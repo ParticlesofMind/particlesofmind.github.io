@@ -27,3 +27,7 @@ li { margin-bottom: 0.4rem; }
 .card h2 { margin-top: 0; }
 code, .mail { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.95em; }
 footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; }
+
+.table { overflow-x: auto; margin: 0 0 1rem; }
+table { border-collapse: collapse; font-size: 0.92rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.6rem; border-bottom: 1px solid rgba(127,127,127,0.3); }
